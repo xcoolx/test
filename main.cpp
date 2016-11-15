@@ -11,6 +11,8 @@
  * Created on November 15, 2016, 5:56 PM
  */
 
+//tasks
+// 1 create class
 
 
 // test.cpp : Defines the entry point for the console application.
