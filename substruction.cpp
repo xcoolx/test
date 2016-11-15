@@ -13,20 +13,18 @@
 
 //tasks
 // 1 create class
-
-
 // test.cpp : Defines the entry point for the console application.
 //
+
+#include "stdafx.h"
+
 #include <cstdlib>
 #include <cstdio>
 #include <cstring>
-
+#include "substruction.h"
 
 inline int difference(char A, char B, int correction);
 inline char getCharByIndex(char* string, int stringLen, int index);
-void stringRevertion(char* string, int lastStringIndex);
-
-char numbers[] = "0123456789";
 
 inline int difference(char A, char B, int correction = 0)
 {
@@ -56,7 +54,7 @@ void stringRevertion(char* string, int lastStringIndex)
 int strLen(char *str)
 {
     int len = 0;
-    while (str++)
+    while (*str++)
     {
         len++;
     }
@@ -102,18 +100,6 @@ char* SubStraction(char* A, char* B, char *C, const int lenOfC)
 
     stringRevertion(C, indexOfC - 1);
     C[indexOfC] = '\0';
+
     return C;
 }
-
-
-int main(int argc, char** argv) 
-{
-    char *A = "19876543210";
-    char *B = "1234567890";
-    char C[255];
-    
-    printf("%s\n", SubStraction(A,B,C,sizeof(C)));
-    
-    return 0;
-}
-
