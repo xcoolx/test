@@ -5,7 +5,6 @@
  */
 
 /* 
- * File:   main.cpp
  * Author: dmytro
  *
  * Created on November 15, 2016, 5:56 PM
@@ -19,7 +18,7 @@
 #include <cstdlib>
 #include <cstdio>
 #include <cstring>
-#include "substruction.h"
+#include "subtruction.h"
 
 inline int difference(char A, char B, int correction);
 inline char getCharByIndex(char* string, int stringLen, int index);
@@ -38,7 +37,7 @@ inline char getCharByIndex(char* string, int stringLen, int index)
     return string[index];
 }
 
-void stringRevertion(char* string, int lastStringIndex)
+void stringReversion(char* string, int lastStringIndex)
 {
     int lastIndex = lastStringIndex;
     for (int i = 0; i < lastStringIndex >> 1; i++, lastIndex--)
@@ -59,7 +58,7 @@ int strLen(char *str)
     return len + 1;
 }
 
-char* SubStraction(char* A, char* B, char *C, const int lenOfC)
+char* Subtraction(char* A, char* B, char *C, const int lenOfC)
 {
     const int lenOfA = strlen(A);
     const int lenOfB = strlen(B);
@@ -96,7 +95,7 @@ char* SubStraction(char* A, char* B, char *C, const int lenOfC)
         indexOfC++;
     }
 
-    stringRevertion(C, indexOfC - 1);
+    stringReversion(C, indexOfC - 1);
     C[indexOfC] = '\0';
 
     return C;
