@@ -1,0 +1,4 @@
+[submodule "interfaces"]
+	path = interfaces
+	url = git@github.com:xcoolx/interfaces.git
+	branch = .
